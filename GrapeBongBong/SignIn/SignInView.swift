@@ -24,6 +24,7 @@ struct SignInView: View {
             
             VStack {
                 TextField("아이디 입력", text: $viewModel.identification)
+                    .tint(.green)
                     .font(.system(size: 20))
                     .focused($focused)
                     .onAppear { focused = true }
@@ -34,6 +35,7 @@ struct SignInView: View {
             
             VStack {
                 SecureField("비밀번호 입력", text: $viewModel.password)
+                    .tint(.green)
                     .font(.system(size: 20))
                 Divider()
                     .frame(height: 1)
