@@ -25,9 +25,11 @@ final class SignInViewModel: ObservableObject {
         }.store(in: &subscriptions)
     }
     
-    func checkAccount() {
+    func checkAccount() -> Bool {
         if identification == "admin" && password == "1234" {
-            print("success")
+            return true
         }
+        
+        return false
     }
 }
