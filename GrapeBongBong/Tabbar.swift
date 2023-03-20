@@ -28,7 +28,7 @@ struct Tabbar: View {
                     Text("커뮤니티")
                 }
             
-            Text("프로필")
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("프로필")
