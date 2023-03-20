@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30B070F29C81B12003AF1DE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30B070E29C81B12003AF1DE /* SignUpView.swift */; };
+		E30B071129C81C8C003AF1DE /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */; };
+		E30B071329C82C29003AF1DE /* InputStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30B071229C82C29003AF1DE /* InputStringView.swift */; };
 		E3438AD629C7313A004258D2 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438AD529C7313A004258D2 /* SignInViewModel.swift */; };
 		E3438ADB29C75234004258D2 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438ADA29C75234004258D2 /* Tabbar.swift */; };
+		E3438ADD29C766C2004258D2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438ADC29C766C2004258D2 /* ProfileView.swift */; };
 		E3DAB14E29C72AA500CC6DB6 /* GrapeBongBongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */; };
 		E3DAB15029C72AA500CC6DB6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB14F29C72AA500CC6DB6 /* SignInView.swift */; };
 		E3DAB15229C72AA600CC6DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DAB15129C72AA600CC6DB6 /* Assets.xcassets */; };
@@ -36,8 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E30B070E29C81B12003AF1DE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E30B071229C82C29003AF1DE /* InputStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStringView.swift; sourceTree = "<group>"; };
 		E3438AD529C7313A004258D2 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E3438ADA29C75234004258D2 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		E3438ADC29C766C2004258D2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E3DAB14A29C72AA500CC6DB6 /* GrapeBongBong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrapeBongBong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeBongBongApp.swift; sourceTree = "<group>"; };
 		E3DAB14F29C72AA500CC6DB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -75,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30B070D29C81AEA003AF1DE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E30B070E29C81B12003AF1DE /* SignUpView.swift */,
+				E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */,
+				E30B071229C82C29003AF1DE /* InputStringView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		E3438AD429C73079004258D2 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +125,13 @@
 		E3DAB14C29C72AA500CC6DB6 /* GrapeBongBong */ = {
 			isa = PBXGroup;
 			children = (
+				E30B070D29C81AEA003AF1DE /* SignUp */,
 				E3438ADA29C75234004258D2 /* Tabbar.swift */,
 				E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */,
 				E3438AD429C73079004258D2 /* SignIn */,
 				E3DAB15129C72AA600CC6DB6 /* Assets.xcassets */,
 				E3DAB15329C72AA600CC6DB6 /* Preview Content */,
+				E3438ADC29C766C2004258D2 /* ProfileView.swift */,
 			);
 			path = GrapeBongBong;
 			sourceTree = "<group>";
@@ -273,8 +293,12 @@
 			files = (
 				E3DAB15029C72AA500CC6DB6 /* SignInView.swift in Sources */,
 				E3438ADB29C75234004258D2 /* Tabbar.swift in Sources */,
+				E30B071329C82C29003AF1DE /* InputStringView.swift in Sources */,
+				E3438ADD29C766C2004258D2 /* ProfileView.swift in Sources */,
 				E3DAB14E29C72AA500CC6DB6 /* GrapeBongBongApp.swift in Sources */,
+				E30B070F29C81B12003AF1DE /* SignUpView.swift in Sources */,
 				E3438AD629C7313A004258D2 /* SignInViewModel.swift in Sources */,
+				E30B071129C81C8C003AF1DE /* SignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

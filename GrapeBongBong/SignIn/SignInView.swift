@@ -15,6 +15,8 @@ struct SignInView: View {
     @State var isSignIn = false
     @State var isFailed = false
     
+    @State var isSingUp = false
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
@@ -69,7 +71,7 @@ struct SignInView: View {
                 
                 HStack(spacing: 20) {
                     Button {
-                        print("회원가입")
+                        isSingUp = true
                     } label: {
                         Text("회원가입")
                             .font(.system(size: 16, weight: .regular))
@@ -86,6 +88,9 @@ struct SignInView: View {
                 }
                 .navigationDestination(isPresented: $isSignIn) {
                     Tabbar()
+                }
+                .navigationDestination(isPresented: $isSingUp) {
+                    SignUpView(viewModel: SignUpViewModel())
                 }
             }
             .padding()
