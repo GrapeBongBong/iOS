@@ -10,38 +10,28 @@ import SwiftUI
 struct SignUpView: View {
     @StateObject var viewModel:  SignUpViewModel
     
+    @State var signUpSuccess = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 40) {
-                    InputStringView(infoString: "이름", bindString: $viewModel.identifier)
+                VStack {
+                    PrivateSignUpView(viewModel: viewModel)
                     
-                    HStack {
-                        Text("생년월일")
-                            .font(.system(size: 20, weight: .medium))
-                        
-                        DatePicker("", selection: $viewModel.birthday, displayedComponents: [.date])
-                            .datePickerStyle(.graphical)
-                    }
+                    Divider()
+                        .frame(height: 1)
+                        .overlay(.green)
+                        .padding(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
                     
-                    InputStringView(infoString: "본인 확인  이메일", bindString: $viewModel.email)
-                    
-                    InputStringView(infoString: "전화번호", bindString: $viewModel.phoneCall)
+                    PublicSignUpView(viewModel: viewModel)
                     
                     Spacer()
+                        .frame(height: 32)
                     
-                    InputStringView(infoString: "닉네임", bindString: $viewModel.nickName)
-                    
-                    InputStringView(infoString: "아이디", bindString: $viewModel.identifier)
-                    
-                    InputStringView(infoString: "비밀번호", bindString: $viewModel.identifier)
-                    
-                    InputStringView(infoString: "비밀번호 재확인", bindString: $viewModel.identifier)
-                    
-                    NavigationLink {
-                        SignInView(viewModel: SignInViewModel())
+                    Button {
+                        signUpSuccess = true
                     } label: {
-                        Text("회원가입")
+                        Text("로그인")
                             .font(.system(size: 24, weight: .medium))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
@@ -51,6 +41,10 @@ struct SignUpView: View {
                     .clipShape(Capsule())
                 }
                 .padding()
+            }
+            .navigationTitle(Text("회원가입"))
+            .navigationDestination(isPresented: $signUpSuccess) {
+                SignInView(viewModel: SignInViewModel())
             }
         }
     }
