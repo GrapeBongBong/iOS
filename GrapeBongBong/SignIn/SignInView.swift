@@ -12,10 +12,9 @@ struct SignInView: View {
     
     @FocusState var focused: Bool
     
-    @State var isSignIn = false
-    @State var isFailed = false
-    
-    @State var isSingUp = false
+    @State var signInSuccess = false
+    @State var isSignUp = false
+    @State var signInFailed = false
     
     var body: some View {
         NavigationStack {
@@ -52,9 +51,9 @@ struct SignInView: View {
                 }
                 
                 Button {
-                    isSignIn = viewModel.checkAccount()
-                    if !isSignIn {
-                        isFailed = true
+                    signInSuccess = viewModel.checkAccount()
+                    if !signInSuccess {
+                        signInFailed = true
                     }
                 } label: {
                     Text("로그인")
@@ -71,7 +70,7 @@ struct SignInView: View {
                 
                 HStack(spacing: 20) {
                     Button {
-                        isSingUp = true
+                        isSignUp = true
                     } label: {
                         Text("회원가입")
                             .font(.system(size: 16, weight: .regular))
@@ -86,23 +85,24 @@ struct SignInView: View {
                             .foregroundColor(.gray)
                     }
                 }
-                .navigationDestination(isPresented: $isSignIn) {
+                .navigationDestination(isPresented: $signInSuccess) {
                     Tabbar()
                 }
-                .navigationDestination(isPresented: $isSingUp) {
+                .navigationDestination(isPresented: $isSignUp) {
                     SignUpView(viewModel: SignUpViewModel())
                 }
             }
             .padding()
-            .alert(isPresented: $isFailed) {
+            .alert(isPresented: $signInFailed) {
                 Alert(
                     title: Text("로그인 실패"),
                     message: Text("아이디 또는 비밀번호를 다시 한번 확인해주세요."),
                     dismissButton: .default(Text("닫기"))
                 )
             }
+            .navigationTitle(Text("로그인"))
+            .toolbar(.hidden)
         }
-        .toolbar(.hidden)
     }
 }
 
