@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SignInView: View {
     @StateObject var viewModel: SignInViewModel
+    
     @FocusState var focused: Bool
+    
     @State var isSignIn = false
     @State var isFailed = false
     
@@ -56,9 +58,9 @@ struct SignInView: View {
                     Text("로그인")
                         .font(.system(size: 24, weight: .medium))
                         .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 60)
                 }
-                .frame(maxWidth: .infinity)
-                .frame(height: 60)
                 .background(.green)
                 .clipShape(Capsule())
 
@@ -95,6 +97,7 @@ struct SignInView: View {
                 )
             }
         }
+        .toolbar(.hidden)
     }
 }
 
