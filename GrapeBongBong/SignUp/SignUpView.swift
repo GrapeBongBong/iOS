@@ -31,7 +31,7 @@ struct SignUpView: View {
                     Button {
                         signUpSuccess = true
                     } label: {
-                        Text("로그인")
+                        Text("회원가입")
                             .font(.system(size: 24, weight: .medium))
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)

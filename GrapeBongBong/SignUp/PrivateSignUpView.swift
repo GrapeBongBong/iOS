@@ -54,6 +54,9 @@ struct PrivateSignUpView: View {
                     .frame(height: 44)
                     .background(.gray.opacity(0.1))
                     .keyboardType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                Text($viewModel.emailCautionMessage.wrappedValue)
+                    .foregroundColor(.red)
             }
             
             VStack(alignment: .leading, spacing: 4) {

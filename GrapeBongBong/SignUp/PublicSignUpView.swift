@@ -37,6 +37,8 @@ struct PublicSignUpView: View {
                     .font(.system(size: 24))
                     .frame(height: 44)
                     .background(.gray.opacity(0.1))
+                Text($viewModel.pwCautionMessage.wrappedValue)
+                    .foregroundColor(.red)
             }
             
             VStack(alignment: .leading, spacing: 4) {
@@ -46,6 +48,8 @@ struct PublicSignUpView: View {
                     .font(.system(size: 24))
                     .frame(height: 44)
                     .background(.gray.opacity(0.1))
+                Text($viewModel.cpwCautionMessage.wrappedValue)
+                    .foregroundColor(.red)
             }
         }
     }
