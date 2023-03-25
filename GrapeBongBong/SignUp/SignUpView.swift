@@ -16,14 +16,14 @@ struct SignUpView: View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    PrivateSignUpView(viewModel: viewModel)
+                    PrivateSignUpView(viewModel: viewModel, customTextFieldModifier: CustomTextFieldModifier())
                     
                     Divider()
                         .frame(height: 1)
                         .overlay(.green)
                         .padding(EdgeInsets(top: 32, leading: 0, bottom: 32, trailing: 0))
                     
-                    PublicSignUpView(viewModel: viewModel)
+                    PublicSignUpView(viewModel: viewModel, customTextFieldModifier: CustomTextFieldModifier())
                     
                     Spacer()
                         .frame(height: 32)

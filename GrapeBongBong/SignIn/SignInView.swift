@@ -31,11 +31,10 @@ struct SignInView: View {
                 VStack {
                     TextField("아이디 입력", text: $viewModel.identification)
                         .tint(.green)
-                        .font(.system(size: 20))
+                        .font(.customBody1)
                         .focused($focused)
                         .onAppear { focused = true }
                         .textInputAutocapitalization(.never)
-                        .keyboardType(.emailAddress)
                     Divider()
                         .frame(height: 1)
                         .background(focused ? .green : .gray)
@@ -44,7 +43,7 @@ struct SignInView: View {
                 VStack {
                     SecureField("비밀번호 입력", text: $viewModel.password)
                         .tint(.green)
-                        .font(.system(size: 20))
+                        .font(.customBody1)
                     Divider()
                         .frame(height: 1)
                         .background(!focused ? .green : .gray)
@@ -57,7 +56,7 @@ struct SignInView: View {
                     }
                 } label: {
                     Text("로그인")
-                        .font(.system(size: 24, weight: .medium))
+                        .font(.customHeadline)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 60)
@@ -73,7 +72,7 @@ struct SignInView: View {
                         isSignUp = true
                     } label: {
                         Text("회원가입")
-                            .font(.system(size: 16, weight: .regular))
+                            .font(.customBody3)
                             .foregroundColor(.green)
                     }
                     
@@ -81,7 +80,7 @@ struct SignInView: View {
                         print("비밀번호 찾기")
                     } label: {
                         Text("비밀번호 찾기")
-                            .font(.system(size: 16, weight: .regular))
+                            .font(.customBody3)
                             .foregroundColor(.gray)
                     }
                 }

@@ -10,22 +10,21 @@ import SwiftUI
 struct PrivateSignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel
     
+    let customTextFieldModifier: CustomTextFieldModifier
     let gender = ["남", "여"]
     
     var body: some View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 4) {
                 Text("이름")
-                    .font(.system(size: 24, weight: .medium))
-                TextField("",text: $viewModel.name)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .font(.customHeadline)
+                TextField("", text: $viewModel.name)
+                    .modifier(customTextFieldModifier)
             }
             
             VStack(spacing: 4) {
                 Text("생년월일")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 DatePicker("", selection: $viewModel.birthday, displayedComponents: [.date])
@@ -37,7 +36,7 @@ struct PrivateSignUpView: View {
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("성별")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 Picker("", selection: $viewModel.gender) {
                     ForEach(gender, id: \.self) {
                         Text($0)
@@ -48,11 +47,9 @@ struct PrivateSignUpView: View {
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("본인확인 이메일")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 TextField("example@example.com",text: $viewModel.email)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.never)
                 Text($viewModel.emailCautionMessage.wrappedValue)
@@ -61,11 +58,9 @@ struct PrivateSignUpView: View {
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("휴대전화 번호")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 TextField("숫자만 입력",text: $viewModel.phoneCall)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
                     .keyboardType(.phonePad)
             }
         }
@@ -74,6 +69,6 @@ struct PrivateSignUpView: View {
 
 struct PrivateSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        PrivateSignUpView(viewModel: SignUpViewModel())
+        PrivateSignUpView(viewModel: SignUpViewModel(), customTextFieldModifier: CustomTextFieldModifier())
     }
 }

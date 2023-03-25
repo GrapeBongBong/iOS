@@ -10,44 +10,39 @@ import SwiftUI
 struct PublicSignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel
     
+    let customTextFieldModifier: CustomTextFieldModifier
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             VStack(alignment: .leading, spacing: 4) {
                 Text("닉네임")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 TextField("",text: $viewModel.nickName)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
             }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("아이디")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 TextField("",text: $viewModel.identifier)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
             }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("비밀번호")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 SecureField("",text: $viewModel.password)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
                 Text($viewModel.pwCautionMessage.wrappedValue)
                     .foregroundColor(.red)
+                    
             }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("비밀번호 확인")
-                    .font(.system(size: 24, weight: .medium))
+                    .font(.customHeadline)
                 SecureField("",text: $viewModel.confirmPassword)
-                    .font(.system(size: 24))
-                    .frame(height: 44)
-                    .background(.gray.opacity(0.1))
+                    .modifier(customTextFieldModifier)
                 Text($viewModel.cpwCautionMessage.wrappedValue)
                     .foregroundColor(.red)
             }
@@ -57,6 +52,6 @@ struct PublicSignUpView: View {
 
 struct PublicSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        PublicSignUpView(viewModel: SignUpViewModel())
+        PublicSignUpView(viewModel: SignUpViewModel(), customTextFieldModifier: CustomTextFieldModifier())
     }
 }
