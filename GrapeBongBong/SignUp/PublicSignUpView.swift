@@ -29,22 +29,27 @@ struct PublicSignUpView: View {
             }
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("비밀번호")
-                    .font(.customHeadline)
+                HStack {
+                    Text("비밀번호")
+                        .font(.customHeadline)
+                    
+                    Text($viewModel.pwCautionMessage.wrappedValue)
+                        .foregroundColor(.red)
+                }
                 SecureField("",text: $viewModel.password)
                     .modifier(customTextFieldModifier)
-                Text($viewModel.pwCautionMessage.wrappedValue)
-                    .foregroundColor(.red)
-                    
             }
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("비밀번호 확인")
-                    .font(.customHeadline)
+                HStack {
+                    Text("비밀번호 확인")
+                        .font(.customHeadline)
+                    
+                    Text($viewModel.cpwCautionMessage.wrappedValue)
+                        .foregroundColor(.red)
+                }
                 SecureField("",text: $viewModel.confirmPassword)
                     .modifier(customTextFieldModifier)
-                Text($viewModel.cpwCautionMessage.wrappedValue)
-                    .foregroundColor(.red)
             }
         }
     }

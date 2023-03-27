@@ -46,14 +46,16 @@ struct PrivateSignUpView: View {
             }
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("본인확인 이메일")
-                    .font(.customHeadline)
+                HStack {
+                    Text("본인확인 이메일")
+                        .font(.customHeadline)
+                    Text($viewModel.emailCautionMessage.wrappedValue)
+                        .foregroundColor(.red)
+                }
                 TextField("example@example.com",text: $viewModel.email)
                     .modifier(customTextFieldModifier)
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.never)
-                Text($viewModel.emailCautionMessage.wrappedValue)
-                    .foregroundColor(.red)
             }
             
             VStack(alignment: .leading, spacing: 4) {
