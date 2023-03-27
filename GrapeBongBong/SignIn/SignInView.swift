@@ -10,11 +10,15 @@ import SwiftUI
 struct SignInView: View {
     @StateObject var viewModel: SignInViewModel
     
-    @FocusState var focused: Bool
-    
-    @State var signInSuccess = false
     @State var isSignUp = false
+    @State var signInSuccess = false
     @State var signInFailed = false
+    
+    @FocusState var focusedField: Field?
+    enum Field {
+        case identifier
+        case password
+    }
     
     var body: some View {
         NavigationStack {
@@ -29,24 +33,38 @@ struct SignInView: View {
                     .frame(width: 160)
                 
                 VStack {
-                    TextField("아이디 입력", text: $viewModel.identification)
-                        .tint(.green)
-                        .font(.customBody1)
-                        .focused($focused)
-                        .onAppear { focused = true }
-                        .textInputAutocapitalization(.never)
-                    Divider()
-                        .frame(height: 1)
-                        .background(focused ? .green : .gray)
-                }
-                
-                VStack {
-                    SecureField("비밀번호 입력", text: $viewModel.password)
-                        .tint(.green)
-                        .font(.customBody1)
-                    Divider()
-                        .frame(height: 1)
-                        .background(!focused ? .green : .gray)
+                    VStack {
+                        TextField("아이디 입력", text: $viewModel.identification)
+                            .tint(.green)
+                            .font(.customBody1)
+                            .focused($focusedField, equals: .identifier)
+                            .textInputAutocapitalization(.never)
+                            .submitLabel(.next)
+                            .autocorrectionDisabled()
+                        Divider()
+                            .frame(height: 1)
+                            .background(focusedField == .identifier ? .green : .gray)
+                    }
+                    
+                    VStack {
+                        SecureField("비밀번호 입력", text: $viewModel.password)
+                            .tint(.green)
+                            .font(.customBody1)
+                            .focused($focusedField, equals: .password)
+                            .submitLabel(.done)
+                        Divider()
+                            .frame(height: 1)
+                            .background(focusedField == .password ? .green : .gray)
+                    }
+                } // VStack
+                .onSubmit {
+                    switch(focusedField) {
+                    case .identifier:
+                        focusedField = .password
+                    default:
+                        signInSuccess = viewModel.checkAccount()
+                        signInFailed = !signInSuccess
+                    }
                 }
                 
                 Button {
@@ -63,7 +81,6 @@ struct SignInView: View {
                 }
                 .background(.green)
                 .clipShape(Capsule())
-
                 
                 Spacer()
                 
@@ -90,7 +107,7 @@ struct SignInView: View {
                 .navigationDestination(isPresented: $isSignUp) {
                     SignUpView(viewModel: SignUpViewModel())
                 }
-            }
+            } // VStack
             .padding()
             .alert(isPresented: $signInFailed) {
                 Alert(
@@ -101,8 +118,8 @@ struct SignInView: View {
             }
             .navigationTitle(Text("로그인"))
             .toolbar(.hidden)
-        }
-    }
+        } //NavigationStack
+    } // body
 }
 
 struct ContentView_Previews: PreviewProvider {

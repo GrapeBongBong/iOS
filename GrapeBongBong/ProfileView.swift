@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.dismiss) var isDismiss
+    
     var body: some View {
-        NavigationView {
-            NavigationLink {
-                SignInView(viewModel: SignInViewModel())
-            } label: {
-                Text("로그아웃")
-            }
+        Button("로그아웃") {
+            isDismiss.callAsFunction()
         }
     }
 }

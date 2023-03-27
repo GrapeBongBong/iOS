@@ -10,7 +10,7 @@ import SwiftUI
 struct SignUpView: View {
     @StateObject var viewModel:  SignUpViewModel
     
-    @State var signUpSuccess = false
+    @Environment (\.dismiss) var isDismiss
     
     var body: some View {
         NavigationStack {
@@ -29,7 +29,7 @@ struct SignUpView: View {
                         .frame(height: 32)
                     
                     Button {
-                        signUpSuccess = true
+                        isDismiss.callAsFunction()
                     } label: {
                         Text("회원가입")
                             .font(.system(size: 24, weight: .medium))
@@ -43,9 +43,6 @@ struct SignUpView: View {
                 .padding()
             }
             .navigationTitle(Text("회원가입"))
-            .navigationDestination(isPresented: $signUpSuccess) {
-                SignInView(viewModel: SignInViewModel())
-            }
         }
     }
 }
