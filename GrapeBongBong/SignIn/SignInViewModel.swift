@@ -10,13 +10,13 @@ import SwiftUI
 import Combine
 
 final class SignInViewModel: ObservableObject {
-    @Published var identification: String = ""
+    @Published var identifier: String = ""
     @Published var password: String = ""
     
     var subscriptions = Set<AnyCancellable>()
     
     init() {
-        $identification.sink { id in
+        $identifier.sink { id in
             // TO-DO
         }.store(in: &subscriptions)
         
@@ -26,7 +26,7 @@ final class SignInViewModel: ObservableObject {
     }
     
     func checkAccount() -> Bool {
-        if identification == "admin" && password == "1234" {
+        if identifier == "admin" && password == "1234" {
             return true
         }
         

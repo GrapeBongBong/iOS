@@ -21,8 +21,9 @@
 		E3DAB15F29C72AA600CC6DB6 /* GrapeBongBongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB15E29C72AA600CC6DB6 /* GrapeBongBongTests.swift */; };
 		E3DAB16929C72AA600CC6DB6 /* GrapeBongBongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB16829C72AA600CC6DB6 /* GrapeBongBongUITests.swift */; };
 		E3DAB16B29C72AA600CC6DB6 /* GrapeBongBongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB16A29C72AA600CC6DB6 /* GrapeBongBongUITestsLaunchTests.swift */; };
-		E3FC806D29C8A10500335803 /* PrivateSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FC806C29C8A10500335803 /* PrivateSignUpView.swift */; };
-		E3FC806F29C8A11200335803 /* PublicSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FC806E29C8A11200335803 /* PublicSignUpView.swift */; };
+		E3E8D36229EC406100099F5C /* CustomButtonTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */; };
+		E3E8D36429EC412100099F5C /* ShapeStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */; };
+		E3E8D36829EC438800099F5C /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36729EC438800099F5C /* CustomInputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,9 @@
 		E3DAB16429C72AA600CC6DB6 /* GrapeBongBongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapeBongBongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DAB16829C72AA600CC6DB6 /* GrapeBongBongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeBongBongUITests.swift; sourceTree = "<group>"; };
 		E3DAB16A29C72AA600CC6DB6 /* GrapeBongBongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeBongBongUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E3FC806C29C8A10500335803 /* PrivateSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateSignUpView.swift; sourceTree = "<group>"; };
-		E3FC806E29C8A11200335803 /* PublicSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicSignUpView.swift; sourceTree = "<group>"; };
+		E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTextModifier.swift; sourceTree = "<group>"; };
+		E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+Extensions.swift"; sourceTree = "<group>"; };
+		E3E8D36729EC438800099F5C /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,6 @@
 			children = (
 				E30B070E29C81B12003AF1DE /* SignUpView.swift */,
 				E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */,
-				E3FC806C29C8A10500335803 /* PrivateSignUpView.swift */,
-				E3FC806E29C8A11200335803 /* PublicSignUpView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -113,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B8638829CF2B5C0008C6C2 /* Font+Extensions.swift */,
+				E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -121,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B8638D29CF32D80008C6C2 /* CustomTextFieldModifier.swift */,
+				E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 				E3DAB15329C72AA600CC6DB6 /* Preview Content */,
 				E3438AD429C73079004258D2 /* SignIn */,
 				E30B070D29C81AEA003AF1DE /* SignUp */,
+				E3E8D36729EC438800099F5C /* CustomInputField.swift */,
 			);
 			path = GrapeBongBong;
 			sourceTree = "<group>";
@@ -319,13 +322,14 @@
 				E3DAB15029C72AA500CC6DB6 /* SignInView.swift in Sources */,
 				E3438ADB29C75234004258D2 /* Tabbar.swift in Sources */,
 				E3B8638929CF2B5C0008C6C2 /* Font+Extensions.swift in Sources */,
+				E3E8D36229EC406100099F5C /* CustomButtonTextModifier.swift in Sources */,
 				E3438ADD29C766C2004258D2 /* ProfileView.swift in Sources */,
-				E3FC806F29C8A11200335803 /* PublicSignUpView.swift in Sources */,
-				E3FC806D29C8A10500335803 /* PrivateSignUpView.swift in Sources */,
 				E3DAB14E29C72AA500CC6DB6 /* GrapeBongBongApp.swift in Sources */,
 				E30B070F29C81B12003AF1DE /* SignUpView.swift in Sources */,
 				E3B8638E29CF32D80008C6C2 /* CustomTextFieldModifier.swift in Sources */,
+				E3E8D36829EC438800099F5C /* CustomInputField.swift in Sources */,
 				E3438AD629C7313A004258D2 /* SignInViewModel.swift in Sources */,
+				E3E8D36429EC412100099F5C /* ShapeStyle+Extensions.swift in Sources */,
 				E30B071129C81C8C003AF1DE /* SignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

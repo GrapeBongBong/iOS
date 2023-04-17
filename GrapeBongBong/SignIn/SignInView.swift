@@ -14,11 +14,13 @@ struct SignInView: View {
     @State var signInSuccess = false
     @State var signInFailed = false
     
-    @FocusState var focusedField: Field?
-    enum Field {
+    @FocusState var focusState: Field?
+    enum Field: Hashable {
         case identifier
         case password
     }
+    
+    let customTextFieldModifier = CustomTextFieldModifier()
     
     var body: some View {
         NavigationStack {
@@ -33,34 +35,16 @@ struct SignInView: View {
                     .frame(width: 160)
                 
                 VStack {
-                    VStack {
-                        TextField("아이디 입력", text: $viewModel.identification)
-                            .tint(.green)
-                            .font(.customBody1)
-                            .focused($focusedField, equals: .identifier)
-                            .textInputAutocapitalization(.never)
-                            .submitLabel(.next)
-                            .autocorrectionDisabled()
-                        Divider()
-                            .frame(height: 1)
-                            .background(focusedField == .identifier ? .green : .gray)
-                    }
+                    CustomTextField<Field?>(title: "아이디 입력", text: $viewModel.identifier, focusState: $focusState, focusing: .identifier)
+                        .submitLabel(.next)
                     
-                    VStack {
-                        SecureField("비밀번호 입력", text: $viewModel.password)
-                            .tint(.green)
-                            .font(.customBody1)
-                            .focused($focusedField, equals: .password)
-                            .submitLabel(.done)
-                        Divider()
-                            .frame(height: 1)
-                            .background(focusedField == .password ? .green : .gray)
-                    }
+                    CustomSecureField<Field?>(title: "비밀번호 입력", text: $viewModel.password, focusState: $focusState, focusing: .password)
+                        .submitLabel(.done)
                 } // VStack
                 .onSubmit {
-                    switch(focusedField) {
+                    switch(focusState) {
                     case .identifier:
-                        focusedField = .password
+                        focusState = .password
                     default:
                         signInSuccess = viewModel.checkAccount()
                         signInFailed = !signInSuccess
@@ -74,12 +58,9 @@ struct SignInView: View {
                     }
                 } label: {
                     Text("로그인")
-                        .font(.customHeadline)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 60)
+                        .modifier(CustomButtonTextModifier())
                 }
-                .background(.green)
+                .background(.mainColor)
                 .clipShape(Capsule())
                 
                 Spacer()
@@ -90,7 +71,7 @@ struct SignInView: View {
                     } label: {
                         Text("회원가입")
                             .font(.customBody3)
-                            .foregroundColor(.green)
+                            .foregroundColor(.mainColor)
                     }
                     
                     Button {
@@ -98,9 +79,9 @@ struct SignInView: View {
                     } label: {
                         Text("비밀번호 찾기")
                             .font(.customBody3)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.subColor)
                     }
-                }
+                } // HStack
                 .navigationDestination(isPresented: $signInSuccess) {
                     Tabbar()
                 }
