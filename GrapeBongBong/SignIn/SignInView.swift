@@ -24,7 +24,7 @@ struct SignInView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 16) {
+            VStack(spacing: 20) {
                 Spacer()
                 
                 Image(systemName: "tortoise.fill")
@@ -34,12 +34,48 @@ struct SignInView: View {
                     .foregroundStyle(.green, .orange)
                     .frame(width: 160)
                 
-                VStack {
+                VStack(spacing: 20) {
                     CustomTextField<Field?>(title: "아이디 입력", text: $viewModel.identifier, focusState: $focusState, focusing: .identifier)
                         .submitLabel(.next)
                     
                     CustomSecureField<Field?>(title: "비밀번호 입력", text: $viewModel.password, focusState: $focusState, focusing: .password)
                         .submitLabel(.done)
+                    
+                    HStack(spacing: 20) {
+                        Button {
+                            isSignUp = true
+                        } label: {
+                            Text("회원가입")
+                                .font(.customBody3)
+                                .foregroundColor(.mainColor)
+                        }
+                        
+                        Button {
+                            print("비밀번호 찾기")
+                        } label: {
+                            Text("비밀번호 찾기")
+                                .font(.customBody3)
+                                .foregroundColor(.subColor)
+                        }
+                    } // HStack
+                    
+                    Button {
+                        signInSuccess = viewModel.checkAccount()
+                        if !signInSuccess {
+                            signInFailed = true
+                        }
+                    } label: {
+                        Text("로그인")
+                            .modifier(CustomButtonTextModifier())
+                    }
+                    .background(.mainColor)
+                    .clipShape(Capsule())
+                    .navigationDestination(isPresented: $signInSuccess) {
+                        Tabbar()
+                    }
+                    .navigationDestination(isPresented: $isSignUp) {
+                        SignUpView(viewModel: SignUpViewModel())
+                    }
                 } // VStack
                 .onSubmit {
                     switch(focusState) {
@@ -50,44 +86,9 @@ struct SignInView: View {
                         signInFailed = !signInSuccess
                     }
                 }
-                
-                Button {
-                    signInSuccess = viewModel.checkAccount()
-                    if !signInSuccess {
-                        signInFailed = true
-                    }
-                } label: {
-                    Text("로그인")
-                        .modifier(CustomButtonTextModifier())
-                }
-                .background(.mainColor)
-                .clipShape(Capsule())
+                .padding()
                 
                 Spacer()
-                
-                HStack(spacing: 20) {
-                    Button {
-                        isSignUp = true
-                    } label: {
-                        Text("회원가입")
-                            .font(.customBody3)
-                            .foregroundColor(.mainColor)
-                    }
-                    
-                    Button {
-                        print("비밀번호 찾기")
-                    } label: {
-                        Text("비밀번호 찾기")
-                            .font(.customBody3)
-                            .foregroundColor(.subColor)
-                    }
-                } // HStack
-                .navigationDestination(isPresented: $signInSuccess) {
-                    Tabbar()
-                }
-                .navigationDestination(isPresented: $isSignUp) {
-                    SignUpView(viewModel: SignUpViewModel())
-                }
             } // VStack
             .padding()
             .alert(isPresented: $signInFailed) {
@@ -99,7 +100,9 @@ struct SignInView: View {
             }
             .navigationTitle(Text("로그인"))
             .toolbar(.hidden)
+            .dismissKeyboardOnDrag()
         } //NavigationStack
+        .tint(.mainColor)
     } // body
 }
 
