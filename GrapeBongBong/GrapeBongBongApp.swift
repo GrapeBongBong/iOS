@@ -11,7 +11,7 @@ import SwiftUI
 struct GrapeBongBongApp: App {
     var body: some Scene {
         WindowGroup {
-            SignInView(viewModel: SignInViewModel())
+            SignInView()
         }
     }
 }

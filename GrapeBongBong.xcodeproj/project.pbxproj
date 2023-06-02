@@ -9,11 +9,51 @@
 /* Begin PBXBuildFile section */
 		E30B070F29C81B12003AF1DE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30B070E29C81B12003AF1DE /* SignUpView.swift */; };
 		E30B071129C81C8C003AF1DE /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */; };
+		E30DCD172A0A449100D78B94 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DCD162A0A449100D78B94 /* Comment.swift */; };
+		E30DCD1C2A0A475B00D78B94 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30DCD1B2A0A475B00D78B94 /* CommentCell.swift */; };
+		E33FBACB2A1A1BBD00B2990F /* CommuPostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBACA2A1A1BBD00B2990F /* CommuPostListView.swift */; };
+		E33FBACD2A1A1BD300B2990F /* CommuPostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBACC2A1A1BD200B2990F /* CommuPostListViewModel.swift */; };
+		E33FBAD52A1A540900B2990F /* AddCommuPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAD42A1A540900B2990F /* AddCommuPostView.swift */; };
+		E33FBAD72A1A54DC00B2990F /* AddCommuPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAD62A1A54DC00B2990F /* AddCommuPostViewModel.swift */; };
+		E33FBAD92A1A5B3900B2990F /* CommuPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAD82A1A5B3900B2990F /* CommuPost.swift */; };
+		E33FBADB2A1A5D8200B2990F /* CommuPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBADA2A1A5D8200B2990F /* CommuPostsCell.swift */; };
+		E33FBADE2A1A68D700B2990F /* DetailCommuPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBADD2A1A68D700B2990F /* DetailCommuPostView.swift */; };
+		E33FBAE02A1A68F100B2990F /* DetailCommuPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBADF2A1A68F100B2990F /* DetailCommuPostViewModel.swift */; };
+		E33FBAE22A1B6E8A00B2990F /* ModifyCommuPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAE12A1B6E8A00B2990F /* ModifyCommuPostView.swift */; };
+		E33FBAE42A1B6EA000B2990F /* ModifyCommuPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAE32A1B6EA000B2990F /* ModifyCommuPostViewModel.swift */; };
+		E33FBAE62A1BB75200B2990F /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FBAE52A1BB75200B2990F /* Categories.swift */; };
 		E3438AD629C7313A004258D2 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438AD529C7313A004258D2 /* SignInViewModel.swift */; };
 		E3438ADB29C75234004258D2 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438ADA29C75234004258D2 /* Tabbar.swift */; };
 		E3438ADD29C766C2004258D2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438ADC29C766C2004258D2 /* ProfileView.swift */; };
+		E34C9E1D2A1F547200841D24 /* ProfileImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34C9E1C2A1F547200841D24 /* ProfileImgCell.swift */; };
+		E357EFCB29FA4BA100C744B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357EFCA29FA4BA100C744B4 /* User.swift */; };
+		E357EFCD29FA4CB300C744B4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357EFCC29FA4CB300C744B4 /* View+Extensions.swift */; };
+		E35DDA3F2A01F2A8008CA385 /* DetailPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DDA3E2A01F2A8008CA385 /* DetailPostView.swift */; };
+		E35DDA412A02B50E008CA385 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DDA402A02B50E008CA385 /* Date+Extensions.swift */; };
+		E36D041829FD559400F69BC4 /* AddTalentPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36D041729FD559400F69BC4 /* AddTalentPostView.swift */; };
+		E36D041A29FD875600F69BC4 /* URLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36D041929FD875600F69BC4 /* URLList.swift */; };
+		E3772CF22A20EFC7004F455C /* MyChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3772CF12A20EFC7004F455C /* MyChatListViewModel.swift */; };
+		E3772CF62A24DAD5004F455C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3772CF52A24DAD5004F455C /* HomeViewModel.swift */; };
+		E3772CF82A24EE16004F455C /* PopularTalentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3772CF72A24EE16004F455C /* PopularTalentCell.swift */; };
+		E3772CFA2A24EE22004F455C /* PopularCommuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3772CF92A24EE22004F455C /* PopularCommuCell.swift */; };
+		E3856E7E2A1F7A3600ADCC7C /* ModifyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3856E7D2A1F7A3600ADCC7C /* ModifyProfileViewModel.swift */; };
 		E3B8638929CF2B5C0008C6C2 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B8638829CF2B5C0008C6C2 /* Font+Extensions.swift */; };
 		E3B8638E29CF32D80008C6C2 /* CustomTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B8638D29CF32D80008C6C2 /* CustomTextFieldModifier.swift */; };
+		E3C0662929FE60B900F2B15A /* AddTalentPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0662829FE60B900F2B15A /* AddTalentPostViewModel.swift */; };
+		E3C0662D29FE657400F2B15A /* TalentPostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0662C29FE657400F2B15A /* TalentPostListView.swift */; };
+		E3C0663129FE94E400F2B15A /* UserProfileSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0663029FE94E400F2B15A /* UserProfileSetting.swift */; };
+		E3C0663329FE9F2A00F2B15A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0663229FE9F2A00F2B15A /* HomeView.swift */; };
+		E3C0663529FEA4AB00F2B15A /* TalentPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0663429FEA4AB00F2B15A /* TalentPostsCell.swift */; };
+		E3C0663829FEA60D00F2B15A /* TalentPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0663729FEA60D00F2B15A /* TalentPost.swift */; };
+		E3C0663B29FEBC8600F2B15A /* PostApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C0663A29FEBC8600F2B15A /* PostApiRequest.swift */; };
+		E3C9DC692A28947D00443365 /* TalentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9DC682A28947D00443365 /* TalentListCell.swift */; };
+		E3C9DC6B2A28D17500443365 /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9DC6A2A28D17500443365 /* CustomTextEditor.swift */; };
+		E3D530292A15155D005F9090 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D530282A15155D005F9090 /* ChatMessage.swift */; };
+		E3D796AD2A11331F00698DDB /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D796AC2A11331F00698DDB /* ChatRoomView.swift */; };
+		E3D796AF2A11353A00698DDB /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D796AE2A11353A00698DDB /* ChatRoomViewModel.swift */; };
+		E3D796B22A123A4700698DDB /* ChatRoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D796B12A123A4700698DDB /* ChatRoomListView.swift */; };
+		E3D796B42A124FEF00698DDB /* ChatRoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D796B32A124FEF00698DDB /* ChatRoomListViewModel.swift */; };
+		E3D796B62A12505E00698DDB /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D796B52A12505E00698DDB /* ChatRoom.swift */; };
 		E3DAB14E29C72AA500CC6DB6 /* GrapeBongBongApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */; };
 		E3DAB15029C72AA500CC6DB6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DAB14F29C72AA500CC6DB6 /* SignInView.swift */; };
 		E3DAB15229C72AA600CC6DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DAB15129C72AA600CC6DB6 /* Assets.xcassets */; };
@@ -24,6 +64,19 @@
 		E3E8D36229EC406100099F5C /* CustomButtonTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */; };
 		E3E8D36429EC412100099F5C /* ShapeStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */; };
 		E3E8D36829EC438800099F5C /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8D36729EC438800099F5C /* CustomInputField.swift */; };
+		E3F0223A2A1E362300331949 /* ModifyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F022392A1E362300331949 /* ModifyProfileView.swift */; };
+		E3F0223F2A1E41C200331949 /* MyChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F0223E2A1E41C200331949 /* MyChatListView.swift */; };
+		E3F022412A1E41D100331949 /* MyCommuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F022402A1E41D100331949 /* MyCommuListView.swift */; };
+		E3F022432A1E41E200331949 /* MyTalentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F022422A1E41E200331949 /* MyTalentListView.swift */; };
+		E3F792182A06A1C600C3CEBB /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F792172A06A1C600C3CEBB /* DetailPostViewModel.swift */; };
+		E3F792292A08FA9500C3CEBB /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F792282A08FA9500C3CEBB /* UIImage+Extensions.swift */; };
+		E3F7922B2A090DFF00C3CEBB /* ModifyTalentPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F7922A2A090DFF00C3CEBB /* ModifyTalentPostView.swift */; };
+		E3F7922D2A090E6400C3CEBB /* ModifyTalentPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F7922C2A090E6400C3CEBB /* ModifyTalentPostViewModel.swift */; };
+		E3F792312A093D0A00C3CEBB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E3F792302A093D0A00C3CEBB /* Kingfisher */; };
+		E3F889362A277F6A00B5CAFB /* MyMatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F889352A277F6A00B5CAFB /* MyMatchListView.swift */; };
+		E3F889392A27903300B5CAFB /* MyMatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F889382A27903300B5CAFB /* MyMatchListViewModel.swift */; };
+		E3FFF3E82A17E1DB000E6970 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFF3E72A17E1DB000E6970 /* ImageCell.swift */; };
+		E3FFF3EA2A18B252000E6970 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FFF3E92A18B252000E6970 /* ChatMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +99,52 @@
 /* Begin PBXFileReference section */
 		E30B070E29C81B12003AF1DE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E30B071029C81C8C003AF1DE /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E30DCD162A0A449100D78B94 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E30DCD1B2A0A475B00D78B94 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		E33FBACA2A1A1BBD00B2990F /* CommuPostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuPostListView.swift; sourceTree = "<group>"; };
+		E33FBACC2A1A1BD200B2990F /* CommuPostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuPostListViewModel.swift; sourceTree = "<group>"; };
+		E33FBAD42A1A540900B2990F /* AddCommuPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommuPostView.swift; sourceTree = "<group>"; };
+		E33FBAD62A1A54DC00B2990F /* AddCommuPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommuPostViewModel.swift; sourceTree = "<group>"; };
+		E33FBAD82A1A5B3900B2990F /* CommuPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuPost.swift; sourceTree = "<group>"; };
+		E33FBADA2A1A5D8200B2990F /* CommuPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommuPostsCell.swift; sourceTree = "<group>"; };
+		E33FBADD2A1A68D700B2990F /* DetailCommuPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommuPostView.swift; sourceTree = "<group>"; };
+		E33FBADF2A1A68F100B2990F /* DetailCommuPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommuPostViewModel.swift; sourceTree = "<group>"; };
+		E33FBAE12A1B6E8A00B2990F /* ModifyCommuPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyCommuPostView.swift; sourceTree = "<group>"; };
+		E33FBAE32A1B6EA000B2990F /* ModifyCommuPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyCommuPostViewModel.swift; sourceTree = "<group>"; };
+		E33FBAE52A1BB75200B2990F /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		E3438AD529C7313A004258D2 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E3438ADA29C75234004258D2 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		E3438ADC29C766C2004258D2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E34C9E1C2A1F547200841D24 /* ProfileImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgCell.swift; sourceTree = "<group>"; };
+		E357EFCA29FA4BA100C744B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E357EFCC29FA4CB300C744B4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E357EFCE29FA5D6600C744B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E35DDA3E2A01F2A8008CA385 /* DetailPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostView.swift; sourceTree = "<group>"; };
+		E35DDA402A02B50E008CA385 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		E36D041729FD559400F69BC4 /* AddTalentPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalentPostView.swift; sourceTree = "<group>"; };
+		E36D041929FD875600F69BC4 /* URLList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLList.swift; sourceTree = "<group>"; };
+		E3772CF12A20EFC7004F455C /* MyChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatListViewModel.swift; sourceTree = "<group>"; };
+		E3772CF52A24DAD5004F455C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E3772CF72A24EE16004F455C /* PopularTalentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTalentCell.swift; sourceTree = "<group>"; };
+		E3772CF92A24EE22004F455C /* PopularCommuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCommuCell.swift; sourceTree = "<group>"; };
+		E3856E7D2A1F7A3600ADCC7C /* ModifyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileViewModel.swift; sourceTree = "<group>"; };
 		E3B8638829CF2B5C0008C6C2 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		E3B8638D29CF32D80008C6C2 /* CustomTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldModifier.swift; sourceTree = "<group>"; };
+		E3C0662829FE60B900F2B15A /* AddTalentPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalentPostViewModel.swift; sourceTree = "<group>"; };
+		E3C0662C29FE657400F2B15A /* TalentPostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentPostListView.swift; sourceTree = "<group>"; };
+		E3C0663029FE94E400F2B15A /* UserProfileSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetting.swift; sourceTree = "<group>"; };
+		E3C0663229FE9F2A00F2B15A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E3C0663429FEA4AB00F2B15A /* TalentPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentPostsCell.swift; sourceTree = "<group>"; };
+		E3C0663729FEA60D00F2B15A /* TalentPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentPost.swift; sourceTree = "<group>"; };
+		E3C0663A29FEBC8600F2B15A /* PostApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiRequest.swift; sourceTree = "<group>"; };
+		E3C9DC682A28947D00443365 /* TalentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentListCell.swift; sourceTree = "<group>"; };
+		E3C9DC6A2A28D17500443365 /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
+		E3D530282A15155D005F9090 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		E3D796AC2A11331F00698DDB /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
+		E3D796AE2A11353A00698DDB /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		E3D796B12A123A4700698DDB /* ChatRoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomListView.swift; sourceTree = "<group>"; };
+		E3D796B32A124FEF00698DDB /* ChatRoomListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomListViewModel.swift; sourceTree = "<group>"; };
+		E3D796B52A12505E00698DDB /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		E3DAB14A29C72AA500CC6DB6 /* GrapeBongBong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrapeBongBong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrapeBongBongApp.swift; sourceTree = "<group>"; };
 		E3DAB14F29C72AA500CC6DB6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -64,6 +158,18 @@
 		E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTextModifier.swift; sourceTree = "<group>"; };
 		E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+Extensions.swift"; sourceTree = "<group>"; };
 		E3E8D36729EC438800099F5C /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		E3F022392A1E362300331949 /* ModifyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileView.swift; sourceTree = "<group>"; };
+		E3F0223E2A1E41C200331949 /* MyChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatListView.swift; sourceTree = "<group>"; };
+		E3F022402A1E41D100331949 /* MyCommuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCommuListView.swift; sourceTree = "<group>"; };
+		E3F022422A1E41E200331949 /* MyTalentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTalentListView.swift; sourceTree = "<group>"; };
+		E3F792172A06A1C600C3CEBB /* DetailPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewModel.swift; sourceTree = "<group>"; };
+		E3F792282A08FA9500C3CEBB /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		E3F7922A2A090DFF00C3CEBB /* ModifyTalentPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTalentPostView.swift; sourceTree = "<group>"; };
+		E3F7922C2A090E6400C3CEBB /* ModifyTalentPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyTalentPostViewModel.swift; sourceTree = "<group>"; };
+		E3F889352A277F6A00B5CAFB /* MyMatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchListView.swift; sourceTree = "<group>"; };
+		E3F889382A27903300B5CAFB /* MyMatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchListViewModel.swift; sourceTree = "<group>"; };
+		E3FFF3E72A17E1DB000E6970 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		E3FFF3E92A18B252000E6970 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F792312A093D0A00C3CEBB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +207,110 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		E30DCD182A0A472C00D78B94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3FFF3E92A18B252000E6970 /* ChatMessageCell.swift */,
+				E30DCD1B2A0A475B00D78B94 /* CommentCell.swift */,
+				E33FBADA2A1A5D8200B2990F /* CommuPostsCell.swift */,
+				E3E8D36729EC438800099F5C /* CustomInputField.swift */,
+				E3FFF3E72A17E1DB000E6970 /* ImageCell.swift */,
+				E3772CF92A24EE22004F455C /* PopularCommuCell.swift */,
+				E3772CF72A24EE16004F455C /* PopularTalentCell.swift */,
+				E34C9E1C2A1F547200841D24 /* ProfileImgCell.swift */,
+				E3C0663429FEA4AB00F2B15A /* TalentPostsCell.swift */,
+				E3C9DC682A28947D00443365 /* TalentListCell.swift */,
+				E3C9DC6A2A28D17500443365 /* CustomTextEditor.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E30DCD1D2A0A479800D78B94 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E3B8638C29CF32520008C6C2 /* Modifiers */,
+				E30DCD182A0A472C00D78B94 /* Cell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E33FBAC92A1A1B9C00B2990F /* CommunityPostList */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBACA2A1A1BBD00B2990F /* CommuPostListView.swift */,
+				E33FBACC2A1A1BD200B2990F /* CommuPostListViewModel.swift */,
+			);
+			path = CommunityPostList;
+			sourceTree = "<group>";
+		};
+		E33FBACE2A1A4D0C00B2990F /* Talent */ = {
+			isa = PBXGroup;
+			children = (
+				E3C0662729FE60A500F2B15A /* AddTalentPost */,
+				E33FBACF2A1A4D1900B2990F /* Chat */,
+				E3F792162A06A17E00C3CEBB /* DetailPost */,
+				E3F7922E2A090E6B00C3CEBB /* ModifyTalentPost */,
+				E3C0663929FEB90A00F2B15A /* TalentPostList */,
+			);
+			path = Talent;
+			sourceTree = "<group>";
+		};
+		E33FBACF2A1A4D1900B2990F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E3D796AB2A11330B00698DDB /* ChatRoom */,
+				E3D796B02A123A2900698DDB /* ChatRoomList */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E33FBAD02A1A4D2C00B2990F /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				E3438AD429C73079004258D2 /* SignIn */,
+				E30B070D29C81AEA003AF1DE /* SignUp */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		E33FBAD12A1A4D5100B2990F /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBADC2A1A689700B2990F /* DetailCommunityPost */,
+				E33FBAD22A1A4DC300B2990F /* AddCommunityPost */,
+				E33FBAC92A1A1B9C00B2990F /* CommunityPostList */,
+				E33FBAD32A1A4DD600B2990F /* ModifyCommunityPost */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		E33FBAD22A1A4DC300B2990F /* AddCommunityPost */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBAD42A1A540900B2990F /* AddCommuPostView.swift */,
+				E33FBAD62A1A54DC00B2990F /* AddCommuPostViewModel.swift */,
+			);
+			path = AddCommunityPost;
+			sourceTree = "<group>";
+		};
+		E33FBAD32A1A4DD600B2990F /* ModifyCommunityPost */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBAE12A1B6E8A00B2990F /* ModifyCommuPostView.swift */,
+				E33FBAE32A1B6EA000B2990F /* ModifyCommuPostViewModel.swift */,
+			);
+			path = ModifyCommunityPost;
+			sourceTree = "<group>";
+		};
+		E33FBADC2A1A689700B2990F /* DetailCommunityPost */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBADD2A1A68D700B2990F /* DetailCommuPostView.swift */,
+				E33FBADF2A1A68F100B2990F /* DetailCommuPostViewModel.swift */,
+			);
+			path = DetailCommunityPost;
+			sourceTree = "<group>";
+		};
 		E3438AD429C73079004258D2 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +323,11 @@
 		E3B8638729CF2B2D0008C6C2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E35DDA402A02B50E008CA385 /* Date+Extensions.swift */,
 				E3B8638829CF2B5C0008C6C2 /* Font+Extensions.swift */,
 				E3E8D36329EC412100099F5C /* ShapeStyle+Extensions.swift */,
+				E3F792282A08FA9500C3CEBB /* UIImage+Extensions.swift */,
+				E357EFCC29FA4CB300C744B4 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -125,6 +339,58 @@
 				E3E8D36129EC406100099F5C /* CustomButtonTextModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		E3C0662729FE60A500F2B15A /* AddTalentPost */ = {
+			isa = PBXGroup;
+			children = (
+				E36D041729FD559400F69BC4 /* AddTalentPostView.swift */,
+				E3C0662829FE60B900F2B15A /* AddTalentPostViewModel.swift */,
+			);
+			path = AddTalentPost;
+			sourceTree = "<group>";
+		};
+		E3C0663629FEA5F300F2B15A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E33FBAE52A1BB75200B2990F /* Categories.swift */,
+				E3D530282A15155D005F9090 /* ChatMessage.swift */,
+				E3D796B52A12505E00698DDB /* ChatRoom.swift */,
+				E30DCD162A0A449100D78B94 /* Comment.swift */,
+				E33FBAD82A1A5B3900B2990F /* CommuPost.swift */,
+				E3C0663729FEA60D00F2B15A /* TalentPost.swift */,
+				E36D041929FD875600F69BC4 /* URLList.swift */,
+				E357EFCA29FA4BA100C744B4 /* User.swift */,
+				E3C0663029FE94E400F2B15A /* UserProfileSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3C0663929FEB90A00F2B15A /* TalentPostList */ = {
+			isa = PBXGroup;
+			children = (
+				E3C0662C29FE657400F2B15A /* TalentPostListView.swift */,
+				E3C0663A29FEBC8600F2B15A /* PostApiRequest.swift */,
+			);
+			path = TalentPostList;
+			sourceTree = "<group>";
+		};
+		E3D796AB2A11330B00698DDB /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				E3D796AC2A11331F00698DDB /* ChatRoomView.swift */,
+				E3D796AE2A11353A00698DDB /* ChatRoomViewModel.swift */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		E3D796B02A123A2900698DDB /* ChatRoomList */ = {
+			isa = PBXGroup;
+			children = (
+				E3D796B12A123A4700698DDB /* ChatRoomListView.swift */,
+				E3D796B32A124FEF00698DDB /* ChatRoomListViewModel.swift */,
+			);
+			path = ChatRoomList;
 			sourceTree = "<group>";
 		};
 		E3DAB14129C72AA500CC6DB6 = {
@@ -150,16 +416,14 @@
 		E3DAB14C29C72AA500CC6DB6 /* GrapeBongBong */ = {
 			isa = PBXGroup;
 			children = (
-				E3B8638C29CF32520008C6C2 /* Modifiers */,
-				E3B8638729CF2B2D0008C6C2 /* Extensions */,
+				E357EFCE29FA5D6600C744B4 /* Info.plist */,
 				E3DAB14D29C72AA500CC6DB6 /* GrapeBongBongApp.swift */,
-				E3438ADC29C766C2004258D2 /* ProfileView.swift */,
-				E3438ADA29C75234004258D2 /* Tabbar.swift */,
 				E3DAB15129C72AA600CC6DB6 /* Assets.xcassets */,
+				E30DCD1D2A0A479800D78B94 /* Components */,
+				E3B8638729CF2B2D0008C6C2 /* Extensions */,
+				E3C0663629FEA5F300F2B15A /* Model */,
 				E3DAB15329C72AA600CC6DB6 /* Preview Content */,
-				E3438AD429C73079004258D2 /* SignIn */,
-				E30B070D29C81AEA003AF1DE /* SignUp */,
-				E3E8D36729EC438800099F5C /* CustomInputField.swift */,
+				E3F022352A1E33CC00331949 /* View */,
 			);
 			path = GrapeBongBong;
 			sourceTree = "<group>";
@@ -189,6 +453,102 @@
 			path = GrapeBongBongUITests;
 			sourceTree = "<group>";
 		};
+		E3F022342A1E33AF00331949 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E3438ADC29C766C2004258D2 /* ProfileView.swift */,
+				E3F022382A1E360D00331949 /* ModifyProfile */,
+				E3F0223D2A1E417B00331949 /* MyChatList */,
+				E3F0223C2A1E416A00331949 /* MyCommunityList */,
+				E3F0223B2A1E415100331949 /* MyTalentList */,
+				E3F889372A278FFA00B5CAFB /* MyMatchList */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E3F022352A1E33CC00331949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3438ADA29C75234004258D2 /* Tabbar.swift */,
+				E33FBAD12A1A4D5100B2990F /* Community */,
+				E3F022362A1E340400331949 /* Home */,
+				E3F022342A1E33AF00331949 /* Profile */,
+				E33FBAD02A1A4D2C00B2990F /* Sign */,
+				E33FBACE2A1A4D0C00B2990F /* Talent */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3F022362A1E340400331949 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3C0663229FE9F2A00F2B15A /* HomeView.swift */,
+				E3772CF52A24DAD5004F455C /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E3F022382A1E360D00331949 /* ModifyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E3F022392A1E362300331949 /* ModifyProfileView.swift */,
+				E3856E7D2A1F7A3600ADCC7C /* ModifyProfileViewModel.swift */,
+			);
+			path = ModifyProfile;
+			sourceTree = "<group>";
+		};
+		E3F0223B2A1E415100331949 /* MyTalentList */ = {
+			isa = PBXGroup;
+			children = (
+				E3F022422A1E41E200331949 /* MyTalentListView.swift */,
+			);
+			path = MyTalentList;
+			sourceTree = "<group>";
+		};
+		E3F0223C2A1E416A00331949 /* MyCommunityList */ = {
+			isa = PBXGroup;
+			children = (
+				E3F022402A1E41D100331949 /* MyCommuListView.swift */,
+			);
+			path = MyCommunityList;
+			sourceTree = "<group>";
+		};
+		E3F0223D2A1E417B00331949 /* MyChatList */ = {
+			isa = PBXGroup;
+			children = (
+				E3F0223E2A1E41C200331949 /* MyChatListView.swift */,
+				E3772CF12A20EFC7004F455C /* MyChatListViewModel.swift */,
+			);
+			path = MyChatList;
+			sourceTree = "<group>";
+		};
+		E3F792162A06A17E00C3CEBB /* DetailPost */ = {
+			isa = PBXGroup;
+			children = (
+				E35DDA3E2A01F2A8008CA385 /* DetailPostView.swift */,
+				E3F792172A06A1C600C3CEBB /* DetailPostViewModel.swift */,
+			);
+			path = DetailPost;
+			sourceTree = "<group>";
+		};
+		E3F7922E2A090E6B00C3CEBB /* ModifyTalentPost */ = {
+			isa = PBXGroup;
+			children = (
+				E3F7922A2A090DFF00C3CEBB /* ModifyTalentPostView.swift */,
+				E3F7922C2A090E6400C3CEBB /* ModifyTalentPostViewModel.swift */,
+			);
+			path = ModifyTalentPost;
+			sourceTree = "<group>";
+		};
+		E3F889372A278FFA00B5CAFB /* MyMatchList */ = {
+			isa = PBXGroup;
+			children = (
+				E3F889352A277F6A00B5CAFB /* MyMatchListView.swift */,
+				E3F889382A27903300B5CAFB /* MyMatchListViewModel.swift */,
+			);
+			path = MyMatchList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +565,9 @@
 			dependencies = (
 			);
 			name = GrapeBongBong;
+			packageProductDependencies = (
+				E3F792302A093D0A00C3CEBB /* Kingfisher */,
+			);
 			productName = GrapeBongBong;
 			productReference = E3DAB14A29C72AA500CC6DB6 /* GrapeBongBong.app */;
 			productType = "com.apple.product-type.application";
@@ -277,6 +640,9 @@
 				Base,
 			);
 			mainGroup = E3DAB14129C72AA500CC6DB6;
+			packageReferences = (
+				E3F7922F2A093D0A00C3CEBB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E3DAB14B29C72AA500CC6DB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,17 +685,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C0663529FEA4AB00F2B15A /* TalentPostsCell.swift in Sources */,
+				E33FBAD72A1A54DC00B2990F /* AddCommuPostViewModel.swift in Sources */,
+				E3D796B22A123A4700698DDB /* ChatRoomListView.swift in Sources */,
+				E3C0663829FEA60D00F2B15A /* TalentPost.swift in Sources */,
+				E3FFF3E82A17E1DB000E6970 /* ImageCell.swift in Sources */,
+				E3F7922B2A090DFF00C3CEBB /* ModifyTalentPostView.swift in Sources */,
+				E357EFCB29FA4BA100C744B4 /* User.swift in Sources */,
+				E3FFF3EA2A18B252000E6970 /* ChatMessageCell.swift in Sources */,
+				E3F022412A1E41D100331949 /* MyCommuListView.swift in Sources */,
+				E3D796AF2A11353A00698DDB /* ChatRoomViewModel.swift in Sources */,
+				E33FBADE2A1A68D700B2990F /* DetailCommuPostView.swift in Sources */,
 				E3DAB15029C72AA500CC6DB6 /* SignInView.swift in Sources */,
+				E3D796AD2A11331F00698DDB /* ChatRoomView.swift in Sources */,
+				E3772CFA2A24EE22004F455C /* PopularCommuCell.swift in Sources */,
+				E3772CF22A20EFC7004F455C /* MyChatListViewModel.swift in Sources */,
 				E3438ADB29C75234004258D2 /* Tabbar.swift in Sources */,
+				E3772CF62A24DAD5004F455C /* HomeViewModel.swift in Sources */,
+				E34C9E1D2A1F547200841D24 /* ProfileImgCell.swift in Sources */,
+				E3C0663129FE94E400F2B15A /* UserProfileSetting.swift in Sources */,
+				E33FBAE22A1B6E8A00B2990F /* ModifyCommuPostView.swift in Sources */,
+				E33FBAD92A1A5B3900B2990F /* CommuPost.swift in Sources */,
+				E3F889362A277F6A00B5CAFB /* MyMatchListView.swift in Sources */,
 				E3B8638929CF2B5C0008C6C2 /* Font+Extensions.swift in Sources */,
+				E33FBAE62A1BB75200B2990F /* Categories.swift in Sources */,
+				E3856E7E2A1F7A3600ADCC7C /* ModifyProfileViewModel.swift in Sources */,
+				E3D796B42A124FEF00698DDB /* ChatRoomListViewModel.swift in Sources */,
+				E33FBACD2A1A1BD300B2990F /* CommuPostListViewModel.swift in Sources */,
+				E33FBAE02A1A68F100B2990F /* DetailCommuPostViewModel.swift in Sources */,
 				E3E8D36229EC406100099F5C /* CustomButtonTextModifier.swift in Sources */,
 				E3438ADD29C766C2004258D2 /* ProfileView.swift in Sources */,
 				E3DAB14E29C72AA500CC6DB6 /* GrapeBongBongApp.swift in Sources */,
+				E36D041A29FD875600F69BC4 /* URLList.swift in Sources */,
+				E35DDA3F2A01F2A8008CA385 /* DetailPostView.swift in Sources */,
+				E3C0663B29FEBC8600F2B15A /* PostApiRequest.swift in Sources */,
+				E3F889392A27903300B5CAFB /* MyMatchListViewModel.swift in Sources */,
+				E3D796B62A12505E00698DDB /* ChatRoom.swift in Sources */,
 				E30B070F29C81B12003AF1DE /* SignUpView.swift in Sources */,
+				E33FBADB2A1A5D8200B2990F /* CommuPostsCell.swift in Sources */,
 				E3B8638E29CF32D80008C6C2 /* CustomTextFieldModifier.swift in Sources */,
+				E3772CF82A24EE16004F455C /* PopularTalentCell.swift in Sources */,
+				E3F022432A1E41E200331949 /* MyTalentListView.swift in Sources */,
+				E3F792182A06A1C600C3CEBB /* DetailPostViewModel.swift in Sources */,
+				E3C9DC692A28947D00443365 /* TalentListCell.swift in Sources */,
 				E3E8D36829EC438800099F5C /* CustomInputField.swift in Sources */,
+				E3F0223F2A1E41C200331949 /* MyChatListView.swift in Sources */,
+				E357EFCD29FA4CB300C744B4 /* View+Extensions.swift in Sources */,
+				E3C0663329FE9F2A00F2B15A /* HomeView.swift in Sources */,
+				E3F7922D2A090E6400C3CEBB /* ModifyTalentPostViewModel.swift in Sources */,
+				E35DDA412A02B50E008CA385 /* Date+Extensions.swift in Sources */,
 				E3438AD629C7313A004258D2 /* SignInViewModel.swift in Sources */,
+				E3C0662929FE60B900F2B15A /* AddTalentPostViewModel.swift in Sources */,
+				E33FBAD52A1A540900B2990F /* AddCommuPostView.swift in Sources */,
+				E3D530292A15155D005F9090 /* ChatMessage.swift in Sources */,
+				E33FBACB2A1A1BBD00B2990F /* CommuPostListView.swift in Sources */,
 				E3E8D36429EC412100099F5C /* ShapeStyle+Extensions.swift in Sources */,
+				E3F0223A2A1E362300331949 /* ModifyProfileView.swift in Sources */,
+				E3C9DC6B2A28D17500443365 /* CustomTextEditor.swift in Sources */,
+				E30DCD172A0A449100D78B94 /* Comment.swift in Sources */,
+				E36D041829FD559400F69BC4 /* AddTalentPostView.swift in Sources */,
+				E30DCD1C2A0A475B00D78B94 /* CommentCell.swift in Sources */,
+				E3F792292A08FA9500C3CEBB /* UIImage+Extensions.swift in Sources */,
+				E3C0662D29FE657400F2B15A /* TalentPostListView.swift in Sources */,
+				E33FBAE42A1B6EA000B2990F /* ModifyCommuPostViewModel.swift in Sources */,
 				E30B071129C81C8C003AF1DE /* SignUpViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,8 +907,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GrapeBongBong/Preview Content\"";
+				DEVELOPMENT_TEAM = T8C5HKRLH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrapeBongBong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bong#";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -517,8 +939,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GrapeBongBong/Preview Content\"";
+				DEVELOPMENT_TEAM = T8C5HKRLH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrapeBongBong/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bong#";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -649,6 +1075,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3F7922F2A093D0A00C3CEBB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3F792302A093D0A00C3CEBB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3F7922F2A093D0A00C3CEBB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3DAB14229C72AA500CC6DB6 /* Project object */;
 }

@@ -15,4 +15,8 @@ extension ShapeStyle where Self == Color {
     static var subColor: Color {
         return .gray
     }
+    
+    static var labelColor: Color {
+        return Color(uiColor: .label)
+    }
 }
